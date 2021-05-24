@@ -2,22 +2,27 @@ package Utility;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class GenericUtility {
 
-	public WebDriver driver;
+public class GenericUtility {
+	
+	public  WebDriver driver;  
 
 	public GenericUtility(WebDriver webDriver) {
 
@@ -30,7 +35,7 @@ public class GenericUtility {
 
 	public String getTitleOfPage() {
 		Log.info("Getting the title...");
-
+		//getting page Title;
 		return driver.getTitle();
 	}
 
@@ -38,12 +43,18 @@ public class GenericUtility {
 		Log.info("validateText");
 		String actualText = driver.findElement(locator).getText();
 		Log.info("Actual Text {" + actualText + "}. Expected Text {" + expectedText + "}");
+		//assert the  expected result with actual by getting text by element on the website
+		Assert.assertEquals(actualText, expectedText);
 		if (!expectedText.equals(actualText)) {
 			Log.error("Text not Matching. Got text as " + actualText);
 
 		}
 
 	}
+	public void acceptCookies(By element) {
+		driver.findElement(element).click();
+	}
+
 
 	public String getElementText(By element) {
 		return driver.findElement(element).getText();
@@ -129,11 +140,10 @@ public class GenericUtility {
 
 	public void verifyDropDownContent(By locator, int index) {
 
-//Select select = new Select(getElement(locator));
-//select.selectByIndex(index);
-		// WebElement loginFormBtn = driver.findElement(btn_login);
-		// ((JavascriptExecutor)
-		// driver).executeScript("arguments[0].scrollIntoView(true);", loginFormBtn);
+        /*  Select select = new Select(getElement(locator));
+         select.selectByIndex(index);
+		 WebElement loginFormBtn = driver.findElement(btn_login);
+		 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", loginFormBtn); */
 
 	}
 
@@ -147,10 +157,11 @@ public class GenericUtility {
 	}
 
 	public void dynamicWait(By element, int duration) {
-		WebElement myDynamicElement = (new WebDriverWait(driver, duration))
-				.until(ExpectedConditions.presenceOfElementLocated(element));
+	WebElement myDynamicElement = (new WebDriverWait(driver, duration)).until(ExpectedConditions.presenceOfElementLocated(element));
+     
 
 	}
+	
 
 	public void bringFocusToElement(WebElement element) {
 		new Actions(driver).moveToElement(element).perform();
@@ -166,20 +177,4 @@ public class GenericUtility {
 		driver.quit();
 	}
 
-	public void FolderCreation() {
-
-	}
-
-	public void cleanup() {
-
-	}
-	
-	public void acceptCookies(By element) {
-        driver.findElement(element).click();
-
- 
-
-    }
-	
-	
 }

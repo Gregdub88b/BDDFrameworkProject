@@ -56,7 +56,7 @@ public class SchoolsHtml extends ExtentReportListener {
 			logInfo.pass("Navigate to Wikipedia ...");
 			
 			utils.goToUrl(Constants.URL_3SCHOOLS);
-			utils.dynamicWait(Constants.ACCEPT_COOKIE_3SCHOOLS, 500);
+			utils.dynamicWait(Constants.ACCEPT_COOKIE_3SCHOOLS, 1000);
 			utils.acceptCookies(Constants.ACCEPT_COOKIE_3SCHOOLS);
 
 		} catch (AssertionError | Exception e) {
