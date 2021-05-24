@@ -3,9 +3,6 @@ package StepDefinitions;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
-import com.aventstack.extentreports.ExtentReports;
-
-import Listeners.ExtentReportListener;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
@@ -30,8 +27,8 @@ public class TestRunner {
 	public static void test()
 	{
 
-	ExtentReportListener report = new ExtentReportListener();
-	ExtentReports extent = ExtentReportListener.setUp();
+	//ExtentReportListener report = new ExtentReportListener();
+	//ExtentReports extent = ExtentReportListener.setUp();
 	}
 	
 }

@@ -3,7 +3,6 @@ package StepDefinitions;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -35,8 +34,8 @@ public class SchoolsHtml extends ExtentReportListener {
 		try {
 			test = extent.createTest(Feature.class, "3schools Feature");
 			test = test.createNode(Scenario.class, "Scenario 3schools");
-			logInfo = test.createNode(new GherkinKeyword("When"), "navigate to Wikipedia home page");
-			logInfo.pass("Navigate to Wikipedia ...");
+			logInfo = test.createNode(new GherkinKeyword("Given"), "check the Firefox browser is open");
+			logInfo.pass("Browser is opened...");
 
 		} catch (AssertionError | Exception e) {
 			testStepHandle("FAIL", driver, logInfo, e);
@@ -52,12 +51,12 @@ public class SchoolsHtml extends ExtentReportListener {
 		ExtentTest logInfo = null;
 		try {
 
-			logInfo = test.createNode(new GherkinKeyword("When"), "navigate to Wikipedia home page");
-			logInfo.pass("Navigate to Wikipedia ...");
-			
+			logInfo = test.createNode(new GherkinKeyword("When"), "navigate to 3schools home page");
+			logInfo.pass("Navigate to 3Wschools....");
 			utils.goToUrl(Constants.URL_3SCHOOLS);
 			utils.dynamicWait(Constants.ACCEPT_COOKIE_3SCHOOLS, 1000);
 			utils.acceptCookies(Constants.ACCEPT_COOKIE_3SCHOOLS);
+			
 
 		} catch (AssertionError | Exception e) {
 			testStepHandle("FAIL", driver, logInfo, e);
@@ -73,10 +72,10 @@ public class SchoolsHtml extends ExtentReportListener {
 		ExtentTest logInfo = null;
 		try {
 
-			logInfo = test.createNode(new GherkinKeyword("When"), "navigate to Wikipedia home page");
-			logInfo.pass("Navigate to Wikipedia ...");
-
-			utils.getTitleOfPage();
+			logInfo = test.createNode(new GherkinKeyword("Then"), "validate title text");
+			logInfo.pass("The Title has been validated succesfully");
+			
+		   // utils.validateText(Constants.HOMEPAGE_TEXT_LOCATOR, "Paid Courses");
 			utils.validateTitle("HTML Tutorial");
 
 		} catch (AssertionError | Exception e) {
