@@ -215,3 +215,14 @@
 [INFO ] 2021-05-24 16:22:42.179 [TestNG-tests-1] Log - Gherkin Step Passed
 [INFO ] 2021-05-24 16:22:42.200 [TestNG-tests-1] Log - Execution completed..
 [INFO ] 2021-05-24 16:22:42.448 [TestNG-tests-1] Log - generate report
+[INFO ] 2021-05-24 17:14:49.537 [TestNG-tests-1] Log - Execution started..
+[INFO ] 2021-05-24 17:14:49.554 [TestNG-tests-1] Log - Extent Report location initialized . . .
+[INFO ] 2021-05-24 17:14:49.695 [TestNG-tests-1] Log - System Info. set in Extent Report
+[INFO ] 2021-05-24 17:14:56.113 [TestNG-tests-1] Log - Gherkin Step Passed
+[INFO ] 2021-05-24 17:14:58.803 [TestNG-tests-1] Log - Gherkin Step Passed
+[INFO ] 2021-05-24 17:14:58.810 [TestNG-tests-1] Log - Getting the title...
+[INFO ] 2021-05-24 17:14:58.821 [TestNG-tests-1] Log - Expected Title HTML Tutorial
+[INFO ] 2021-05-24 17:14:58.837 [TestNG-tests-1] Log - Actual Title HTML Tutorial
+[INFO ] 2021-05-24 17:15:00.063 [TestNG-tests-1] Log - Gherkin Step Passed
+[INFO ] 2021-05-24 17:15:00.083 [TestNG-tests-1] Log - Execution completed..
+[INFO ] 2021-05-24 17:15:00.444 [TestNG-tests-1] Log - generate report

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-24T16:22:34 IST" name="Suite" finished-at="2021-05-24T16:22:42 IST" duration-ms="7369">
+  <suite started-at="2021-05-24T17:14:48 IST" name="Suite" finished-at="2021-05-24T17:15:00 IST" duration-ms="11100">
     <groups>
     </groups>
-    <test started-at="2021-05-24T16:22:34 IST" name="Test" finished-at="2021-05-24T16:22:42 IST" duration-ms="7369">
+    <test started-at="2021-05-24T17:14:48 IST" name="Test" finished-at="2021-05-24T17:15:00 IST" duration-ms="11100">
       <class name="StepDefinitions.SchoolsHtml">
-        <test-method signature="check_the_firefox_browser_is_open()[pri:0, instance:StepDefinitions.SchoolsHtml@7bd4937b]" started-at="2021-05-24T16:22:35 IST" name="check_the_firefox_browser_is_open" finished-at="2021-05-24T16:22:39 IST" duration-ms="3832" status="PASS">
+        <test-method signature="check_the_firefox_browser_is_open()[pri:0, instance:StepDefinitions.SchoolsHtml@7bd4937b]" started-at="2021-05-24T17:14:49 IST" name="check_the_firefox_browser_is_open" finished-at="2021-05-24T17:14:56 IST" duration-ms="6393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_the_firefox_browser_is_open -->
-        <test-method signature="navigate_to_3schools_home_page()[pri:0, instance:StepDefinitions.SchoolsHtml@7bd4937b]" started-at="2021-05-24T16:22:39 IST" name="navigate_to_3schools_home_page" finished-at="2021-05-24T16:22:41 IST" duration-ms="1937" status="PASS">
+        <test-method signature="navigate_to_3schools_home_page()[pri:0, instance:StepDefinitions.SchoolsHtml@7bd4937b]" started-at="2021-05-24T17:14:56 IST" name="navigate_to_3schools_home_page" finished-at="2021-05-24T17:14:58 IST" duration-ms="2687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigate_to_3schools_home_page -->
-        <test-method signature="validate_title_text()[pri:0, instance:StepDefinitions.SchoolsHtml@7bd4937b]" started-at="2021-05-24T16:22:41 IST" name="validate_title_text" finished-at="2021-05-24T16:22:42 IST" duration-ms="933" status="PASS">
+        <test-method signature="validate_title_text()[pri:0, instance:StepDefinitions.SchoolsHtml@7bd4937b]" started-at="2021-05-24T17:14:58 IST" name="validate_title_text" finished-at="2021-05-24T17:15:00 IST" duration-ms="1258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_title_text -->
