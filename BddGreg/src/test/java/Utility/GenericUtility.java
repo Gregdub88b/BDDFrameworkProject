@@ -173,4 +173,13 @@ public class GenericUtility {
 	public void cleanup() {
 
 	}
+	
+	public void acceptCookies(By element) {
+        driver.findElement(element).click();
+
+ 
+
+    }
+	
+	
 }
