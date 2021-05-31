@@ -6,11 +6,13 @@
   </listeners>
   <test thread-count="2" parallel="tests" name="Test(failed)">
     <classes>
-      <class name="StepDefinitions.SchoolsHtml">
+      <class name="StepDefinitions.TestRunner">
         <methods>
-          <include name="validate_title_text"/>
+          <include name="runScenario" invocation-numbers="2 0 1"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- StepDefinitions.SchoolsHtml -->
+      </class> <!-- StepDefinitions.TestRunner -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

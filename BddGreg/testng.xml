@@ -7,10 +7,10 @@
 	</listeners>
 	
 	
-	<test thread-count="5" name="Test">
+	<test parallel="tests" thread-count="5" name="Test">
 
 		<classes>
-			<class name="StepDefinitions.SchoolsHtml" />			
+			<class name="StepDefinitions.TestRunner" />				
 		</classes>
 	</test> <!-- Test -->
 

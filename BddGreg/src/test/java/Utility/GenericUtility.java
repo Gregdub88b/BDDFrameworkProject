@@ -59,13 +59,13 @@ public class GenericUtility {
 
 	public void login_functionality(String username, String password) {
 		try {
-			WebElement userName = driver.findElement(By.id("loginID"));
+			WebElement userName = driver.findElement(By.id(""));
 			userName.clear();
 			userName.sendKeys(username);
-			WebElement passWord = driver.findElement(By.id("Password"));
+			WebElement passWord = driver.findElement(By.id(""));
 			passWord.clear();
 			passWord.sendKeys(password);
-			WebElement signin = driver.findElement(By.id("SignIn_button"));
+			WebElement signin = driver.findElement(By.id(""));
 			signin.click();
 			driver.manage().window().maximize();
 		} catch (Exception e) {
@@ -75,17 +75,17 @@ public class GenericUtility {
 
 	public void clickLoginbutton() {
 
-		WebElement login = driver.findElement(By.id("SubmitLogin"));
+		WebElement login = driver.findElement(By.id(""));
 		login.click();
 	}
 
 	public void ClickingonCheckboxesInThePage() {
-		WebElement checkbox = driver.findElement(By.linkText("Checkbox"));
+		WebElement checkbox = driver.findElement(By.linkText(""));
 		checkbox.click();
 	}
 
 	public void DropdownFunctionalityOfThePage() {
-		WebElement myElement = driver.findElement(By.name("dropdown"));
+		WebElement myElement = driver.findElement(By.name(""));
 		Select dropdown = new Select(myElement);
 		// selectByVisibleText
 		dropdown.selectByVisibleText("Text");
@@ -101,6 +101,8 @@ public class GenericUtility {
 		driver.navigate().forward();
 
 	}
+	
+
 
 	public void validateTitle(String exTitle) {
 		Log.info("Expected Title " + exTitle);
@@ -144,7 +146,7 @@ public class GenericUtility {
 	}
 
 	public void ElementVisible() {
-		if (driver.findElement(By.cssSelector("a > font")).isDisplayed()) {
+		if (driver.findElement(By.cssSelector("")).isDisplayed()) {
 			Log.info("Element is Visible");
 		} else {
 			Log.info("Element is InVisible");
