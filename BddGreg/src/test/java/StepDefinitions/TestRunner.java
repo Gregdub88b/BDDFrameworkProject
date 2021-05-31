@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 
 		features = "src/test/resources/Features",
 
-		glue = { "StepDefinitions" },tags="@ExTestWithTable", monochrome = true, plugin = { "pretty" })
+		glue = { "StepDefinitions" }, monochrome = true, plugin = { "pretty" })
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 
