@@ -68,7 +68,7 @@ public class LoginTest extends ExtentReportListener {
 	@When("user enters {string} and {int}")
 	public void user_enters(String Login, Integer RowNumber)
 			throws InterruptedException, InvalidFormatException, IOException {
-		login = new PageLogin(driver);
+		//login = new PageLogin(driver);
 		ExcelReader reader = new ExcelReader();
 		List<Map<String, String>> testData = reader.getData(Constants.EXCEL_DATA_SHEET, Login);
 
