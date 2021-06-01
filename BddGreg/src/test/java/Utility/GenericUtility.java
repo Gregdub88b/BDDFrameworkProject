@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,10 +16,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-
 public class GenericUtility {
-	
-	public  WebDriver driver;  
+
+	public WebDriver driver;
 
 	public GenericUtility(WebDriver webDriver) {
 
@@ -31,15 +31,26 @@ public class GenericUtility {
 
 	public String getTitleOfPage() {
 		Log.info("Getting the title...");
-		//getting page Title;
+		// getting page Title;
 		return driver.getTitle();
 	}
+
+	public void maxWindow() {
+	}
+
+	public void clickOnButton(By element) {
+		driver.findElement(element).click();
+	}
+	
+	
+	
 
 	public void validateText(By locator, String expectedText) {
 		Log.info("validateText");
 		String actualText = driver.findElement(locator).getText();
 		Log.info("Actual Text {" + actualText + "}. Expected Text {" + expectedText + "}");
-		//assert the  expected result with actual by getting text by element on the website
+		// assert the expected result with actual by getting text by element on the
+		// website
 		Assert.assertEquals(actualText, expectedText);
 		if (!expectedText.equals(actualText)) {
 			Log.error("Text not Matching. Got text as " + actualText);
@@ -47,10 +58,10 @@ public class GenericUtility {
 		}
 
 	}
+
 	public void acceptCookies(By element) {
 		driver.findElement(element).click();
 	}
-
 
 	public String getElementText(By element) {
 		return driver.findElement(element).getText();
@@ -71,12 +82,6 @@ public class GenericUtility {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-
-	public void clickLoginbutton() {
-
-		WebElement login = driver.findElement(By.id(""));
-		login.click();
 	}
 
 	public void ClickingonCheckboxesInThePage() {
@@ -101,8 +106,6 @@ public class GenericUtility {
 		driver.navigate().forward();
 
 	}
-	
-
 
 	public void validateTitle(String exTitle) {
 		Log.info("Expected Title " + exTitle);
@@ -138,10 +141,12 @@ public class GenericUtility {
 
 	public void verifyDropDownContent(By locator, int index) {
 
-        /*  Select select = new Select(getElement(locator));
-         select.selectByIndex(index);
-		 WebElement loginFormBtn = driver.findElement(btn_login);
-		 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", loginFormBtn); */
+		/*
+		 * Select select = new Select(getElement(locator)); select.selectByIndex(index);
+		 * WebElement loginFormBtn = driver.findElement(btn_login);
+		 * ((JavascriptExecutor)
+		 * driver).executeScript("arguments[0].scrollIntoView(true);", loginFormBtn);
+		 */
 
 	}
 
@@ -155,11 +160,10 @@ public class GenericUtility {
 	}
 
 	public void dynamicWait(By element, int duration) {
-	WebElement myDynamicElement = (new WebDriverWait(driver, duration)).until(ExpectedConditions.presenceOfElementLocated(element));
-     
+		WebElement myDynamicElement = (new WebDriverWait(driver, duration))
+				.until(ExpectedConditions.presenceOfElementLocated(element));
 
 	}
-	
 
 	public void bringFocusToElement(WebElement element) {
 		new Actions(driver).moveToElement(element).perform();
@@ -171,8 +175,18 @@ public class GenericUtility {
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 	}
 
+	public void navigateToForm(By element) {
+		WebElement loginFormBtn = driver.findElement(element);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", loginFormBtn);
+
+	}
+
 	public void quit() {
 		driver.quit();
+	}
+
+	public void close() {
+		driver.close();
 	}
 
 }

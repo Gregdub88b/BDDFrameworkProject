@@ -30,11 +30,12 @@ public class SchoolsHtml extends ExtentReportListener {
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
 		utils = new GenericUtility(driver);
+		test = extent.createTest(Feature.class, "3schools Feature");
+		test = test.createNode(Scenario.class, "Scenario 3schools");
 
 		
 		try {
-			test = extent.createTest(Feature.class, "3schools Feature");
-			test = test.createNode(Scenario.class, "Scenario 3schools");
+			
 			logInfo = test.createNode(new GherkinKeyword("Given"), "check the Firefox browser is open");
 			logInfo.pass("Browser is opened...");
 
