@@ -1,16 +1,16 @@
-[INFO ] 2021-06-01 17:03:10.410 [TestNG-tests-1] Log - Execution started..
-[INFO ] 2021-06-01 17:03:10.525 [TestNG-tests-1] Log - Extent Report location initialized . . .
-[INFO ] 2021-06-01 17:03:10.822 [TestNG-tests-1] Log - System Info. set in Extent Report
-[INFO ] 2021-06-01 17:03:28.340 [TestNG-PoolService-2] Log - Found data for test
-[INFO ] 2021-06-01 17:03:28.377 [TestNG-PoolService-3] Log - Skipped test..
-[INFO ] 2021-06-01 17:03:28.382 [TestNG-PoolService-1] Log - Found data for test
-[INFO ] 2021-06-01 17:03:28.391 [TestNG-PoolService-4] Log - Skipped test..
-[INFO ] 2021-06-01 17:03:36.905 [TestNG-PoolService-3] Log - FAILED
-[INFO ] 2021-06-01 17:03:36.906 [TestNG-PoolService-4] Log - FAILED
-[INFO ] 2021-06-01 17:03:38.160 [TestNG-PoolService-1] Log - Gherkin Step Passed
-[INFO ] 2021-06-01 17:03:38.669 [TestNG-PoolService-2] Log - Gherkin Step Passed
-[INFO ] 2021-06-01 17:03:39.295 [TestNG-PoolService-0] Log - Expected Title HTML Tutorial
-[INFO ] 2021-06-01 17:03:39.334 [TestNG-PoolService-0] Log - Actual Title HTML Tutorial
-[INFO ] 2021-06-01 17:03:41.101 [TestNG-PoolService-0] Log - Gherkin Step Passed
-[INFO ] 2021-06-01 17:03:41.171 [TestNG-tests-1] Log - Execution completed..
-[INFO ] 2021-06-01 17:03:41.743 [TestNG-tests-1] Log - generate report
+[INFO ] 2021-06-02 09:26:15.279 [TestNG-tests-1] Log - Execution started..
+[INFO ] 2021-06-02 09:26:15.309 [TestNG-tests-1] Log - Extent Report location initialized . . .
+[INFO ] 2021-06-02 09:26:15.444 [TestNG-tests-1] Log - System Info. set in Extent Report
+[INFO ] 2021-06-02 09:26:26.412 [TestNG-PoolService-2] Log - Found data for test
+[INFO ] 2021-06-02 09:26:26.412 [TestNG-PoolService-3] Log - Found data for test
+[INFO ] 2021-06-02 09:26:26.412 [TestNG-PoolService-4] Log - Found data for test
+[INFO ] 2021-06-02 09:26:26.422 [TestNG-PoolService-1] Log - Found data for test
+[INFO ] 2021-06-02 09:26:34.100 [TestNG-PoolService-1] Log - Gherkin Step Passed
+[INFO ] 2021-06-02 09:26:34.199 [TestNG-PoolService-0] Log - Expected Title HTML Tutorial
+[INFO ] 2021-06-02 09:26:34.215 [TestNG-PoolService-0] Log - Actual Title HTML Tutorial
+[INFO ] 2021-06-02 09:26:35.912 [TestNG-PoolService-0] Log - Gherkin Step Passed
+[INFO ] 2021-06-02 09:26:36.890 [TestNG-PoolService-2] Log - Gherkin Step Passed
+[INFO ] 2021-06-02 09:26:36.898 [TestNG-PoolService-4] Log - Gherkin Step Passed
+[INFO ] 2021-06-02 09:26:37.399 [TestNG-PoolService-3] Log - Gherkin Step Passed
+[INFO ] 2021-06-02 09:26:37.427 [TestNG-tests-1] Log - Execution completed..
+[INFO ] 2021-06-02 09:26:37.719 [TestNG-tests-1] Log - generate report

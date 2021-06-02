@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-01T17:03:09 IST" name="BDD Demo" finished-at="2021-06-01T17:03:41 IST" duration-ms="31802">
+  <suite started-at="2021-06-02T09:26:14 IST" name="BDD Demo" finished-at="2021-06-02T09:26:37 IST" duration-ms="22655">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-06-01T17:03:09 IST" name="Test" finished-at="2021-06-01T17:03:41 IST" duration-ms="31802">
+    <test started-at="2021-06-02T09:26:14 IST" name="Test" finished-at="2021-06-02T09:26:37 IST" duration-ms="22655">
       <class name="StepDefinitions.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-01T17:03:10 IST" name="setUpClass" finished-at="2021-06-01T17:03:11 IST" duration-ms="521" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-02T09:26:15 IST" name="setUpClass" finished-at="2021-06-02T09:26:15 IST" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-01T17:03:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-01T17:03:36 IST" duration-ms="25465" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-02T09:26:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-02T09:26:36 IST" duration-ms="21150" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,34 +27,58 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LIE-5CG9343RYC', ip: '192.168.0.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LIE-5CG9343RYC', ip: '192.168.0.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at Listeners.ExtentReportListener.captureScreenShot(ExtentReportListener.java:74)
-at Listeners.ExtentReportListener.testStepHandle(ExtentReportListener.java:52)
-at StepDefinitions.LoginTest.user_is_navigate_to_home_page(LoginTest.java:124)
-at ✽.user is navigate to home page(file:///C:/Users/gbujnows/Desktop/BDDDataDriven/BddGreg/src/test/resources/Features/LoginTest.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-01T17:03:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-01T17:03:41 IST" duration-ms="29672" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-02T09:26:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-02T09:26:36 IST" duration-ms="21158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check login is succesful with valid credential"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Login functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-02T09:26:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-02T09:26:34 IST" duration-ms="18356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check login is succesful with valid credential"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Login functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-02T09:26:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-02T09:26:37 IST" duration-ms="21660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check login is succesful with valid credential"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test Login functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-02T09:26:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-02T09:26:35 IST" duration-ms="20173" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,79 +94,7 @@ at ✽.user is navigate to home page(file:///C:/Users/gbujnows/Desktop/BDDDataDr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-01T17:03:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-01T17:03:36 IST" duration-ms="25458" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check login is succesful with valid credential"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Test Login functionality]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LIE-5CG9343RYC', ip: '192.168.0.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LIE-5CG9343RYC', ip: '192.168.0.67', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at Listeners.ExtentReportListener.captureScreenShot(ExtentReportListener.java:74)
-at Listeners.ExtentReportListener.testStepHandle(ExtentReportListener.java:52)
-at StepDefinitions.LoginTest.user_is_navigate_to_home_page(LoginTest.java:124)
-at ✽.user is navigate to home page(file:///C:/Users/gbujnows/Desktop/BDDDataDriven/BddGreg/src/test/resources/Features/LoginTest.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-01T17:03:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-01T17:03:38 IST" duration-ms="26730" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check login is succesful with valid credential"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Test Login functionality]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-01T17:03:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-01T17:03:38 IST" duration-ms="27240" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check login is succesful with valid credential"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Test Login functionality]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-01T17:03:41 IST" name="tearDownClass" finished-at="2021-06-01T17:03:41 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:StepDefinitions.TestRunner@d5b810e]" started-at="2021-06-02T09:26:37 IST" name="tearDownClass" finished-at="2021-06-02T09:26:37 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
