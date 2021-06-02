@@ -35,8 +35,7 @@ public class GenericUtility {
 		return driver.getTitle();
 	}
 
-	public void maxWindow() {
-	}
+
 
 	public void clickOnButton(By element) {
 		driver.findElement(element).click();
@@ -59,9 +58,7 @@ public class GenericUtility {
 
 	}
 
-	public void acceptCookies(By element) {
-		driver.findElement(element).click();
-	}
+	
 
 	public String getElementText(By element) {
 		return driver.findElement(element).getText();
@@ -102,9 +99,7 @@ public class GenericUtility {
 	}
 
 	public void NavigateToNextPage() {
-
 		driver.navigate().forward();
-
 	}
 
 	public void validateTitle(String exTitle) {

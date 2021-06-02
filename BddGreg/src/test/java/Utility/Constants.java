@@ -9,7 +9,6 @@ public class Constants {
 	public static final By HOMEPAGE_TEXT_LOCATOR = By.xpath(HOMEPAGE_TXT);
 	public static final By ACCEPT_COOKIE_3SCHOOLS = By.id("accept-choices");
 	public static final String URL_LOGIN_TEST = "https://example.testproject.io/web/";
-	public static final String data = "C:\\Users\\gbujnows\\Desktop\\BDDDataDriven\\BddGreg\\testng.xml";
 	public static final String EXCEL_DATA_SHEET = "C:\\Users\\gbujnows\\Desktop\\BDDDataDriven\\BddGreg\\automation.xlsx";
 	public static final String LOGINBTN = "login";
 	public static final By LOGINBTN_L = By.id(LOGINBTN);
@@ -21,5 +20,24 @@ public class Constants {
 	public static final String ADDRESS = "12 Herbert Street";
 	public static final String EMAIL = "greg@gmail.com";
 	public static final String PHONE = "01010101010";
+	public static final String data = System.getProperty("user.dir")+"//automation.xlsx";
+	
+	public static final String COUNTRYEL = "country";
+	public static final By COUNTRY_L = By.id(COUNTRYEL);
+	public static final String ADDRESSEL = "address";
+	public static final By ADDRESS_L = By.id(ADDRESSEL);
+	public static final String EMAILEL = "email";
+	public static final By EMAIL_L = By.id(EMAILEL);
+	public static final String PHONEEL = "phone";
+	public static final By PHONE_L = By.id(PHONEEL);
+	public static final String TXTUSERNAME = "name";
+	public static final By TXTUSERNAME_L = By.id(TXTUSERNAME);
+	public static final String TXTPASSWORD = "password";
+	public static final By TXTPASSWORD_L = By.id(TXTPASSWORD);
+
+	
+	
+	
+
 
 }

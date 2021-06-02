@@ -1,38 +1,28 @@
 package Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import Utility.Constants;
 
 //POM - Page Object Model
 public class PageLogin {
 
 	WebDriver driver;
 
-	By txt_username = By.id("name");
-	By txt_usernamepassword = By.id("password");
-	By country_L = By.id("country");
-	By address_L = By.id("address");
-	By email_L = By.id("email");
-	By phone_L = By.id("phone");
-
 	public PageLogin(WebDriver driver) {
 		this.driver = driver;
 	}
 
 	public void ProvideData(String username, String password) {
-		driver.findElement(txt_username).sendKeys(username);
-		driver.findElement(txt_usernamepassword).sendKeys(password);
+		driver.findElement(Constants.TXTUSERNAME_L).sendKeys(username);
+		driver.findElement(Constants.TXTPASSWORD_L).sendKeys(password);
 
 	}
 
-	public void setupForm(String country,String address,String email, String phone) {
-		driver.findElement(country_L).sendKeys(country);
-		driver.findElement(address_L).sendKeys(address);
-		driver.findElement(email_L).sendKeys(email);
-		driver.findElement(phone_L).sendKeys(phone);
-		}
-
-
-	
+	public void setupForm(String country, String address, String email, String phone) {
+		driver.findElement(Constants.COUNTRY_L).sendKeys(country);
+		driver.findElement(Constants.ADDRESS_L).sendKeys(address);
+		driver.findElement(Constants.EMAIL_L).sendKeys(email);
+		driver.findElement(Constants.PHONE_L).sendKeys(phone);
+	}
 
 }
