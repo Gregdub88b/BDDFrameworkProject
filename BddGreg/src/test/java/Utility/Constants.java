@@ -9,7 +9,6 @@ public class Constants {
 	public static final By HOMEPAGE_TEXT_LOCATOR = By.xpath(HOMEPAGE_TXT);
 	public static final By ACCEPT_COOKIE_3SCHOOLS = By.id("accept-choices");
 	public static final String URL_LOGIN_TEST = "https://example.testproject.io/web/";
-	public static final String EXCEL_DATA_SHEET = "C:\\Users\\gbujnows\\Desktop\\BDDDataDriven\\BddGreg\\automation.xlsx";
 	public static final String LOGINBTN = "login";
 	public static final By LOGINBTN_L = By.id(LOGINBTN);
 	public static final String SAVEBTN = "save";
@@ -21,7 +20,6 @@ public class Constants {
 	public static final String EMAIL = "greg@gmail.com";
 	public static final String PHONE = "01010101010";
 	public static final String DATA = System.getProperty("user.dir")+"//automation.xlsx";
-	
 	public static final String COUNTRYEL = "country";
 	public static final By COUNTRY_L = By.id(COUNTRYEL);
 	public static final String ADDRESSEL = "address";

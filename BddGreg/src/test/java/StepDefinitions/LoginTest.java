@@ -51,7 +51,7 @@ public class LoginTest extends ExtentReportListener {
 	public void user_is_on_example_login_page() {
 
 		try {
-
+			
 			logInfo = test.createNode(new GherkinKeyword("And"), "navigate to login page");
 			logInfo.pass("user is on login page...");
 
@@ -75,6 +75,10 @@ public class LoginTest extends ExtentReportListener {
 		String dataPassword = testData.get(RowNumber).get("password");
 
 		try {
+			
+			
+			logInfo = test.createNode(new GherkinKeyword("When"), "user enters username and password");
+			logInfo.pass("user credential succesfully validated");
 			String runMode = testData.get(RowNumber).get("Runmode");
 			if (runMode.equals("Yes")) {
 				Log.info("Found data for test");
@@ -95,7 +99,7 @@ public class LoginTest extends ExtentReportListener {
 	public void user_click_on_login_button() throws InterruptedException, IOException, InvalidFormatException {
 
 		try {
-
+			
 			logInfo = test.createNode(new GherkinKeyword("And"), "user click on login button and fill out the form");
 			logInfo.pass("user is succesfully logged on..");
 
@@ -115,7 +119,7 @@ public class LoginTest extends ExtentReportListener {
 	@Then("user is navigate to home page")
 	public void user_is_navigate_to_home_page() {
 		try {
-
+			
 			logInfo = test.createNode(new GherkinKeyword("Then"), "user is navigate to home page");
 			logInfo.pass("driver has been closed");
 			utils.close();
