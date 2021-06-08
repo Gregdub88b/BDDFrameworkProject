@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-BDD_Demo" class="navigator-link">
-              <span class="suite-name border-failed">BDD Demo</span>
+              <span class="suite-name border-passed">BDD Demo</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-BDD_Demo" class="hide-methods failed suite-BDD_Demo"> (hide)</a> <!-- hide-methods failed suite-BDD_Demo -->
-                      <a href="#" panel-name="suite-BDD_Demo" class="show-methods failed suite-BDD_Demo"> (show)</a> <!-- show-methods failed suite-BDD_Demo -->
-                    </span>
-                    <div class="method-list-content failed suite-BDD_Demo">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Demo" title="StepDefinitions.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check on mortgage query&quot;, &quot;Optional[KBC motrgage]&quot;)">runScenario("Check on mortgage query", "Optional[KBC motrgage]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-BDD_Demo -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -151,87 +137,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-BDD_Demo" class="panel BDD_Demo">
-          <div class="suite-BDD_Demo-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">StepDefinitions.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Check on mortgage query&quot;, &quot;Optional[KBC motrgage]&quot;)">
-                  </a> <!-- runScenario("Check on mortgage query", "Optional[KBC motrgage]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check on mortgage query", "Optional[KBC motrgage]")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: There were 6 undefined steps
-The step &quot;KBC page open&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Given(&quot;KBC page open&quot;)
-public void kbc_page_open() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Select KBC Mortgage tag&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Given(&quot;Select KBC Mortgage tag&quot;)
-public void select_kbc_mortgage_tag() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Click on Started Button&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Given(&quot;Click on Started Button&quot;)
-public void click_on_started_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;navigate to selection applicants&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;navigate to selection applicants&quot;)
-public void navigate_to_selection_applicants() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;select numbers of applicants&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;select numbers of applicants&quot;)
-public void select_numbers_of_applicants() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Click Next Button on Page&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Click Next Button on Page&quot;)
-public void click_next_button_on_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:117)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 9 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-BDD_Demo-class-failed -->
           <div class="suite-BDD_Demo-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -353,36 +258,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'StepDefinitions.TestRunner')
-data.setCell(0, 3, 35331);
+data.setCell(0, 3, 31069);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'StepDefinitions.TestRunner')
-data.setCell(1, 3, 26572);
+data.setCell(1, 3, 28398);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'StepDefinitions.TestRunner')
-data.setCell(2, 3, 23012);
+data.setCell(2, 3, 27467);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'StepDefinitions.TestRunner')
-data.setCell(3, 3, 22986);
+data.setCell(3, 3, 24800);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'StepDefinitions.TestRunner')
-data.setCell(4, 3, 22566);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'runScenario')
-data.setCell(5, 2, 'StepDefinitions.TestRunner')
-data.setCell(5, 3, 421);
+data.setCell(4, 3, 24797);
 window.suiteTableData['BDD_Demo']= { tableData: data, tableDiv: 'times-div-BDD_Demo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-BDD_Demo">
               </div> <!-- times-div-BDD_Demo -->
             </div> <!-- times-div -->
@@ -415,33 +316,27 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("validate title on 3schools  page", "Optional[Test Tiltle on the 3schools page]")</span>
-                <span class="method-start">491 ms</span>
+                <span class="method-start">525 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check login is succesful with valid credential", "Optional[Test Login functionality]")</span>
-                <span class="method-start">491 ms</span>
+                <span class="method-start">525 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check login is succesful with valid credential", "Optional[Test Login functionality]")</span>
-                <span class="method-start">491 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Check on mortgage query", "Optional[KBC motrgage]")</span>
-                <span class="method-start">492 ms</span>
+                <span class="method-start">533 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check login is succesful with valid credential", "Optional[Test Login functionality]")</span>
-                <span class="method-start">492 ms</span>
+                <span class="method-start">534 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Check login is succesful with valid credential", "Optional[Test Login functionality]")</span>
-                <span class="method-start">492 ms</span>
+                <span class="method-start">534 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">35826 ms</span>
+                <span class="method-start">31598 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

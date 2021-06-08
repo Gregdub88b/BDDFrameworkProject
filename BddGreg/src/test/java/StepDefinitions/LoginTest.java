@@ -69,7 +69,7 @@ public class LoginTest extends ExtentReportListener {
 			throws InterruptedException, InvalidFormatException, IOException {
 
 		ExcelReader reader = new ExcelReader();
-		List<Map<String, String>> testData = reader.getData(Constants.EXCEL_DATA_SHEET, Login);
+		List<Map<String, String>> testData = reader.getData(Constants.DATA, Login);
 
 		String dataUser = testData.get(RowNumber).get("username");
 		String dataPassword = testData.get(RowNumber).get("password");

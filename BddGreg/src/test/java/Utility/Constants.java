@@ -20,7 +20,7 @@ public class Constants {
 	public static final String ADDRESS = "12 Herbert Street";
 	public static final String EMAIL = "greg@gmail.com";
 	public static final String PHONE = "01010101010";
-	public static final String data = System.getProperty("user.dir")+"//automation.xlsx";
+	public static final String DATA = System.getProperty("user.dir")+"//automation.xlsx";
 	
 	public static final String COUNTRYEL = "country";
 	public static final By COUNTRY_L = By.id(COUNTRYEL);
