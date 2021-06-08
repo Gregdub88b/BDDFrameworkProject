@@ -35,14 +35,9 @@ public class GenericUtility {
 		return driver.getTitle();
 	}
 
-
-
 	public void clickOnButton(By element) {
 		driver.findElement(element).click();
 	}
-	
-	
-	
 
 	public void validateText(By locator, String expectedText) {
 		Log.info("validateText");
@@ -58,27 +53,9 @@ public class GenericUtility {
 
 	}
 
-	
-
 	public String getElementText(By element) {
 		return driver.findElement(element).getText();
 
-	}
-
-	public void login_functionality(String username, String password) {
-		try {
-			WebElement userName = driver.findElement(By.id(""));
-			userName.clear();
-			userName.sendKeys(username);
-			WebElement passWord = driver.findElement(By.id(""));
-			passWord.clear();
-			passWord.sendKeys(password);
-			WebElement signin = driver.findElement(By.id(""));
-			signin.click();
-			driver.manage().window().maximize();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 
 	public void ClickingonCheckboxesInThePage() {

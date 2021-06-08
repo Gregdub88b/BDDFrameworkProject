@@ -9,14 +9,76 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">BDD Demo</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22,655</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">37,114</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">BDD Demo</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">StepDefinitions.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="5">1622622375738</td><td rowspan="5">21150</td></tr><tr class="passedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">BDD Demo</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">StepDefinitions.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1623143739511</td><td rowspan="1">421</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">StepDefinitions.TestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="5">1623143739511</td><td rowspan="5">23012</td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m5">runScenario</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">StepDefinitions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Check login is succesful with valid credential&quot;</td><td>&quot;Optional[Test Login functionality]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">StepDefinitions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Check on mortgage query&quot;</td><td>&quot;Optional[KBC motrgage]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: There were 6 undefined steps
+The step &quot;KBC page open&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Given(&quot;KBC page open&quot;)
+public void kbc_page_open() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Select KBC Mortgage tag&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Given(&quot;Select KBC Mortgage tag&quot;)
+public void select_kbc_mortgage_tag() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Click on Started Button&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Given(&quot;Click on Started Button&quot;)
+public void click_on_started_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;navigate to selection applicants&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;navigate to selection applicants&quot;)
+public void navigate_to_selection_applicants() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;select numbers of applicants&quot; is undefined. You can implement it using the snippet(s) below:
+
+@When(&quot;select numbers of applicants&quot;)
+public void select_numbers_of_applicants() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+The step &quot;Click Next Button on Page&quot; is undefined. You can implement it using the snippet(s) below:
+
+@Then(&quot;Click Next Button on Page&quot;)
+public void click_next_button_on_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:117)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">StepDefinitions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Check login is succesful with valid credential&quot;</td><td>&quot;Optional[Test Login functionality]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">StepDefinitions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Check login is succesful with valid credential&quot;</td><td>&quot;Optional[Test Login functionality]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">StepDefinitions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Check login is succesful with valid credential&quot;</td><td>&quot;Optional[Test Login functionality]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">StepDefinitions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;validate title on 3schools  page&quot;</td><td>&quot;Optional[Test Tiltle on the 3schools page]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">StepDefinitions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Check login is succesful with valid credential&quot;</td><td>&quot;Optional[Test Login functionality]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">StepDefinitions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;validate title on 3schools  page&quot;</td><td>&quot;Optional[Test Tiltle on the 3schools page]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

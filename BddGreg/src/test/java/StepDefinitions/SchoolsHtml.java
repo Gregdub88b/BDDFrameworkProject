@@ -84,7 +84,7 @@ public class SchoolsHtml extends ExtentReportListener {
 
 		}
 
-		driver.close();
+		utils.close();
 
 	}
 
