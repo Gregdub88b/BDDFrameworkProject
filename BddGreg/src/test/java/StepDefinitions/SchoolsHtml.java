@@ -21,9 +21,9 @@ public class SchoolsHtml extends ExtentReportListener {
 
     WebDriver driver;
 	GenericUtility utils;
-	ExtentTest logInfo = null;
+	ExtentTest logInfo;
 
-	//@Test
+	
 	@Given("check the Firefox browser is open")
 	public void check_the_firefox_browser_is_open() throws IOException {
 
@@ -46,7 +46,7 @@ public class SchoolsHtml extends ExtentReportListener {
 
 	}
 
-	//@Test
+	
 	@When("navigate to 3schools home page")
 	public void navigate_to_3schools_home_page() throws IOException {
 
@@ -67,7 +67,7 @@ public class SchoolsHtml extends ExtentReportListener {
 
 	}
 
-	//@Test
+	
 	@Then("validate title text")
 	public void validate_title_text() {
 

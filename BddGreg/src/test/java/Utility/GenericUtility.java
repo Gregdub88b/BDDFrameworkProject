@@ -23,6 +23,7 @@ public class GenericUtility {
 	public GenericUtility(WebDriver webDriver) {
 
 		this.driver = webDriver;
+		driver.manage().window().maximize();
 	}
 
 	public void goToUrl(String url) {
