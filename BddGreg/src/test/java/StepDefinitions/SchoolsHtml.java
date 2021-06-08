@@ -22,7 +22,7 @@ public class SchoolsHtml extends ExtentReportListener {
     WebDriver driver;
 	GenericUtility utils;
 	ExtentTest logInfo;
-
+ 
 	
 	@Given("check the Firefox browser is open")
 	public void check_the_firefox_browser_is_open() throws IOException {
