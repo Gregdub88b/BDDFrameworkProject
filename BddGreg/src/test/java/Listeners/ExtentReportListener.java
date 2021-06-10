@@ -24,15 +24,19 @@ public class ExtentReportListener {
 	public static ExtentReports extent = null;
 	public static ExtentTest test = null;
 
+	
+	//create  new ExtentReport
+	
 	public static ExtentReports setUp() {
-		String reportLocation =  System.getProperty("user.dir")+"./reports/index.html";;
+		String reportLocation = System.getProperty("user.dir") + "./reports/" + getDateAndTimeReport() + ".html";
+		;
 		report = new ExtentHtmlReporter(reportLocation);
 		report.config().setDocumentTitle("Automation Test Report");
 		report.config().setReportName("Automation Test Report");
 		report.config().setTheme(Theme.DARK);
 		Log.info("Extent Report location initialized . . .");
 		report.start();
-
+		//configuration ExtentReport
 		extent = new ExtentReports();
 		extent.attachReporter(report);
 		extent.setSystemInfo("Application", "Test");
@@ -42,6 +46,8 @@ public class ExtentReportListener {
 		return extent;
 	}
 
+	
+	//execute when the test is failed in catch block trigger 
 	public static void testStepHandle(String teststatus, WebDriver driver, ExtentTest extenttest, Throwable throwable) {
 		switch (teststatus) {
 		case "FAIL":
@@ -49,8 +55,9 @@ public class ExtentReportListener {
 			extenttest.error(throwable.fillInStackTrace());
 
 			try {
+				//taking the screenshot
 				extenttest.addScreenCaptureFromPath(captureScreenShot(driver));
-				//extenttest.fail("Failed Screenshot",MediaEntityBuilder.createScreenCaptureFromPath(captureScreenShot(driver)).build());
+				
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -68,7 +75,7 @@ public class ExtentReportListener {
 			break;
 		}
 	}
-
+	
 	public static String captureScreenShot(WebDriver driver) throws IOException {
 		TakesScreenshot screen = (TakesScreenshot) driver;
 		File src = screen.getScreenshotAs(OutputType.FILE);
@@ -78,13 +85,30 @@ public class ExtentReportListener {
 		return dest;
 	}
 
+	//get the current time and date for Extent Report
+	private static String getDateAndTimeReport() {
+
+		String str = null;
+		try {
+
+			Date date = new Date();
+			String timeStamp = new SimpleDateFormat("yyyy.MM.dd/HH.mm.ss").format(new Date());
+			str = timeStamp.formatted(date);
+
+		} catch (Exception e) {
+		}
+		return str;
+	}
+	
+	//get the current time and date for screenshot
 	private static String getcurrentdateandtime() {
 		String str = null;
 		try {
 			DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss:SSS");
 			Date date = new Date();
 			str = dateFormat.format(date);
-			str = str.replace(" ", "").replaceAll("/", "").replaceAll(":", "");
+			str = str.replace(" ", "").replace("/", "").replace(":", "");
+
 		} catch (Exception e) {
 		}
 		return str;

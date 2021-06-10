@@ -37,7 +37,7 @@ public class LoginTest extends ExtentReportListener {
 		test = test.createNode(Scenario.class, "Login");
 
 		try {
-
+			//ExtentReport info
 			logInfo = test.createNode(new GherkinKeyword("Given"), "browser is open");
 			logInfo.pass("Browser is opened...");
 
@@ -54,7 +54,7 @@ public class LoginTest extends ExtentReportListener {
 			
 			logInfo = test.createNode(new GherkinKeyword("And"), "navigate to login page");
 			logInfo.pass("user is on login page...");
-
+			//navigating to URL
 			utils.goToUrl(Constants.URL_LOGIN_TEST);
 
 		} catch (AssertionError | Exception e) {
@@ -67,10 +67,10 @@ public class LoginTest extends ExtentReportListener {
 	@When("user enters {string} and {int}")
 	public void user_enters(String Login, Integer RowNumber)
 			throws InterruptedException, InvalidFormatException, IOException {
-
+		//calling ExcelReader for Data-Driven test
 		ExcelReader reader = new ExcelReader();
 		List<Map<String, String>> testData = reader.getData(Constants.DATA, Login);
-
+		//getting the username and password  from spreadsheet
 		String dataUser = testData.get(RowNumber).get("username");
 		String dataPassword = testData.get(RowNumber).get("password");
 
@@ -80,9 +80,12 @@ public class LoginTest extends ExtentReportListener {
 			logInfo = test.createNode(new GherkinKeyword("When"), "user enters username and password");
 			logInfo.pass("user credential succesfully validated");
 			String runMode = testData.get(RowNumber).get("Runmode");
+			//selecting row from spreadsheet for getting specific data
 			if (runMode.equals("Yes")) {
 				Log.info("Found data for test");
+				//navigating to the form on the page
 				utils.navigateToForm(Constants.LOGINBTN_L);
+				//providing data for user and password
 				login.ProvideData(dataUser, dataPassword);
 			} else {
 				Log.info("Skipped test..");
@@ -99,7 +102,7 @@ public class LoginTest extends ExtentReportListener {
 	public void user_click_on_login_button() throws InterruptedException, IOException, InvalidFormatException {
 
 		try {
-			
+			//clicked on login button , filled out the form and click save and logout button
 			logInfo = test.createNode(new GherkinKeyword("And"), "user click on login button and fill out the form");
 			logInfo.pass("user is succesfully logged on..");
 
@@ -122,6 +125,7 @@ public class LoginTest extends ExtentReportListener {
 			
 			logInfo = test.createNode(new GherkinKeyword("Then"), "user is navigate to home page");
 			logInfo.pass("driver has been closed");
+			//driver close
 			utils.close();
 
 		} catch (AssertionError | Exception e) {

@@ -13,11 +13,11 @@ import io.cucumber.testng.CucumberOptions;
 
 		features = "src/test/resources/Features", glue = { "StepDefinitions" }, monochrome = true, plugin = {
 				"pretty" })
-
+//TestNG
 public class TestRunner extends AbstractTestNGCucumberTests {
 
 	@Override
-	@DataProvider(parallel = true)
+	@DataProvider(parallel = true) //parallel test flag
 	public Object[][] scenarios() {
 		return super.scenarios();
 

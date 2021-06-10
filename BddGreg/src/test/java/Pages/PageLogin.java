@@ -3,7 +3,7 @@ package Pages;
 import org.openqa.selenium.WebDriver;
 import Utility.Constants;
 
-//POM - Page Object Model
+//POM - Page Object Model for logintest.java
 public class PageLogin {
 
 	WebDriver driver;
@@ -11,7 +11,7 @@ public class PageLogin {
 	public PageLogin(WebDriver driver) {
 		this.driver = driver;
 	}
-
+	
 	public void ProvideData(String username, String password) {
 		driver.findElement(Constants.TXTUSERNAME_L).sendKeys(username);
 		driver.findElement(Constants.TXTPASSWORD_L).sendKeys(password);

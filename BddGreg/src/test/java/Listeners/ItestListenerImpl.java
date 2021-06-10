@@ -9,6 +9,8 @@ import com.aventstack.extentreports.model.ScreenCapture;
 
 import Utility.Log;
 
+//methods for TestNG Listeners for ExtentReport
+
 public class ItestListenerImpl extends ExtentReportListener implements ITestListener{
 	
 	

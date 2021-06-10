@@ -27,6 +27,7 @@ public class GenericUtility {
 	}
 
 	public void goToUrl(String url) {
+		Log.info("Navigating to URL");
 		driver.get(url);
 	}
 
@@ -59,12 +60,12 @@ public class GenericUtility {
 
 	}
 
-	public void ClickingonCheckboxesInThePage() {
+	public void clickingonCheckboxesInThePage() {
 		WebElement checkbox = driver.findElement(By.linkText(""));
 		checkbox.click();
 	}
 
-	public void DropdownFunctionalityOfThePage() {
+	public void dropdownFunctionalityOfThePage() {
 		WebElement myElement = driver.findElement(By.name(""));
 		Select dropdown = new Select(myElement);
 		// selectByVisibleText
@@ -76,7 +77,7 @@ public class GenericUtility {
 		dropdown.selectByValue("ab");
 	}
 
-	public void NavigateToNextPage() {
+	public void navigateToNextPage() {
 		driver.navigate().forward();
 	}
 
@@ -123,7 +124,7 @@ public class GenericUtility {
 
 	}
 
-	public void ElementVisible() {
+	public void elementVisible() {
 		if (driver.findElement(By.cssSelector("")).isDisplayed()) {
 			Log.info("Element is Visible");
 		} else {

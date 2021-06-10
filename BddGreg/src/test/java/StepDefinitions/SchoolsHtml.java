@@ -55,8 +55,11 @@ public class SchoolsHtml extends ExtentReportListener {
 
 			logInfo = test.createNode(new GherkinKeyword("When"), "navigate to 3schools home page");
 			logInfo.pass("Navigate to 3Wschools....");
+			//navigating to URL
 			utils.goToUrl(Constants.URL_3SCHOOLS);
+			//waiting for web element element 1s 
 			utils.dynamicWait(Constants.ACCEPT_COOKIE_3SCHOOLS, 1000);
+			//accept cookie
 			utils.clickOnButton(Constants.ACCEPT_COOKIE_3SCHOOLS);
 			
 
@@ -76,14 +79,14 @@ public class SchoolsHtml extends ExtentReportListener {
 
 			logInfo = test.createNode(new GherkinKeyword("Then"), "validate title text");
 			logInfo.pass("The Title has been validated succesfully");
-			
+			//getting and asserting the Page Title
 			utils.validateTitle("HTML Tutorial");
 
 		} catch (AssertionError | Exception e) {
 			testStepHandle("FAIL", driver, logInfo, e);
 
 		}
-
+		//driver close
 		utils.close();
 
 	}
